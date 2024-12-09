@@ -26,7 +26,7 @@ export default function FuniroFurniture() {
         <div className="w-[300px] h-96 absolute left-[1040px] top-36">
           <Image src="/rectangle 45.png" alt="Rectangle 45" width={300} height={400} />
         </div>
-        <div className="w-[150px] h-64 absolute left-0 top-[500px] bg-slate-600">
+        <div className="w-[150px] h-64 absolute left-0 top-[500px]">
           <Image src="/rectangle 37.png" alt="Rectangle 37" width={150} height={256} />
         </div>
         <div className="w-[215px] h-40 absolute left-44 top-[500px]">

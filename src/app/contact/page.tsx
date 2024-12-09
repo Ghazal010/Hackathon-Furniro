@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { FaGreaterThan } from "react-icons/fa";
@@ -10,17 +10,6 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 
 export default function Contact() {
-    const [showCount, setShowCount] = useState(16);
-    const totalResults = 32;
-
-    const handleShowChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setShowCount(Number(e.target.value));
-    };
-
-    const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        console.log("Sorting by:", e.target.value);
-    };
-
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log("Form Submitted");
@@ -30,8 +19,8 @@ export default function Contact() {
         <div>
             <Header />
 
-            <div className='relative top-[100px] left-[690px]'>
-                <img src='/logo.png' className='w-16 h-16' />
+            <div className="relative top-[100px] left-[690px]">
+                <img src="/logo.png" className="w-16 h-16" />
             </div>
 
             <div className="relative flex items-center justify-center">
@@ -48,7 +37,6 @@ export default function Contact() {
             </div>
 
             <div className="max-w-6xl mx-auto px-6 py-12">
-                
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold">Get In Touch With Us</h1>
                     <p className="text-gray-600 mt-2">
@@ -58,7 +46,6 @@ export default function Contact() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    
                     <div className="space-y-6">
                         <div className="flex items-start space-x-4">
                             <span className="text-yellow-600 text-2xl">📍</span>
@@ -87,7 +74,6 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    
                     <div>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
@@ -151,7 +137,6 @@ export default function Contact() {
                 </div>
             </div>
 
-            
             <div className="flex justify-between items-center bg-orange-200 px-10 py-6 mt-3">
                 <div className="flex items-center space-x-4">
                     <i className="text-2xl">

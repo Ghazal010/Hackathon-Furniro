@@ -12,7 +12,6 @@ import { SiTicktick } from "react-icons/si";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 import Shop1 from '@/components/Shop1';
-import Products from '@/components/products';
 
 export default function Shop() {
     const [showCount, setShowCount] = useState(16); 
@@ -52,8 +51,8 @@ export default function Shop() {
 
                 <div className="bg-peach w-screen h-[70px] relative flex justify-between items-center px-8">
                     <button className="flex items-center space-x-2 px-4 py-2">
-                    <IoFilterOutline /> 
-                    <span>Filter</span>
+                        <IoFilterOutline /> 
+                        <span>Filter</span>
                     </button>
                     <span><HiOutlineSquares2X2 className='ml-[-100px]'/></span>
                     <span><AiOutlineBoxPlot className='ml-[-140px]'/></span>
@@ -88,87 +87,87 @@ export default function Shop() {
                     </div>
                 </div>
             </div>
-<div>
-   <Shop1 /> 
-   <Shop1 />
-   <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', padding: '10px' }}>
-  {[1, 2, 3].map((page) => (
-    <button
-      key={page}
-      onClick={() => console.log(`Page ${page} clicked`)} 
-      style={{
-        backgroundColor: page === 1 ? '#b58900' : '#f8f5ec', 
-        color: page === 1 ? '#fff' : '#000',
-        border: '1px solid #ddd',
-        borderRadius: '5px',
-        padding: '10px 15px',
-        cursor: 'pointer',
-      }}
-    >
-      {page}
-    </button>
-  ))}
-  <button
-    onClick={() => console.log('Next clicked')} 
-    style={{
-      backgroundColor: '#f8f5ec',
-      color: '#000',
-      border: '1px solid #ddd',
-      borderRadius: '5px',
-      padding: '10px 15px',
-      cursor: 'pointer',
-    }}
-  >
-    Next
-  </button>
-</div>
 
-</div>
+            <div>
+                <Shop1 /> 
+                <Shop1 />
+                <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', padding: '10px' }}>
+                    {[1, 2, 3].map((page) => (
+                        <button
+                            key={page}
+                            onClick={() => console.log(`Page ${page} clicked`)} 
+                            style={{
+                                backgroundColor: page === 1 ? '#b58900' : '#f8f5ec', 
+                                color: page === 1 ? '#fff' : '#000',
+                                border: '1px solid #ddd',
+                                borderRadius: '5px',
+                                padding: '10px 15px',
+                                cursor: 'pointer',
+                            }}
+                        >
+                            {page}
+                        </button>
+                    ))}
+                    <button
+                        onClick={() => console.log('Next clicked')} 
+                        style={{
+                            backgroundColor: '#f8f5ec',
+                            color: '#000',
+                            border: '1px solid #ddd',
+                            borderRadius: '5px',
+                            padding: '10px 15px',
+                            cursor: 'pointer',
+                        }}
+                    >
+                        Next
+                    </button>
+                </div>
+            </div>
 
-           <div>
-           <div className="flex justify-between items-center bg-peach px-8 py-6 mt-3">
-    <div className="flex items-center space-x-4">
-        <i className="text-2xl">
-            <GrTrophy />
-        </i>
-        <div>
-            <h3 className="font-bold text-lg">High Quality</h3>
-            <p className="text-sm text-gray-600">crafted from top materials</p>
-        </div>
-    </div>
+            <div>
+                <div className="flex justify-between items-center bg-peach px-8 py-6 mt-3">
+                    <div className="flex items-center space-x-4">
+                        <i className="text-2xl">
+                            <GrTrophy />
+                        </i>
+                        <div>
+                            <h3 className="font-bold text-lg">High Quality</h3>
+                            <p className="text-sm text-gray-600">crafted from top materials</p>
+                        </div>
+                    </div>
 
-    <div className="flex items-center space-x-4">
-        <i className="text-2xl">
-            <SiTicktick />
-        </i>
-        <div>
-            <h3 className="font-bold text-lg">Warranty Protection</h3>
-            <p className="text-sm text-gray-600">Over 2 years</p>
-        </div>
-    </div>
+                    <div className="flex items-center space-x-4">
+                        <i className="text-2xl">
+                            <SiTicktick />
+                        </i>
+                        <div>
+                            <h3 className="font-bold text-lg">Warranty Protection</h3>
+                            <p className="text-sm text-gray-600">Over 2 years</p>
+                        </div>
+                    </div>
 
-    <div className="flex items-center space-x-4">
-        <i className="text-2xl">
-            <FaHandHoldingHeart />
-        </i>
-        <div>
-            <h3 className="font-bold text-lg">Free Shipping</h3>
-            <p className="text-sm text-gray-600">Order over 150 $</p>
-        </div>
-    </div>
+                    <div className="flex items-center space-x-4">
+                        <i className="text-2xl">
+                            <FaHandHoldingHeart />
+                        </i>
+                        <div>
+                            <h3 className="font-bold text-lg">Free Shipping</h3>
+                            <p className="text-sm text-gray-600">Order over 150 $</p>
+                        </div>
+                    </div>
 
-    <div className="flex items-center space-x-4">
-        <i className="text-2xl">
-            <BiSupport />
-        </i>
-        <div>
-            <h3 className="font-bold text-lg">24 / 7 Support</h3>
-            <p className="text-sm text-gray-600">Dedicated support</p>
-        </div>
-    </div>
-</div>
+                    <div className="flex items-center space-x-4">
+                        <i className="text-2xl">
+                            <BiSupport />
+                        </i>
+                        <div>
+                            <h3 className="font-bold text-lg">24 / 7 Support</h3>
+                            <p className="text-sm text-gray-600">Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-           </div>
             <div className='border-t-2 mt-3'>
                 <Footer />
             </div>

@@ -28,11 +28,12 @@ export default function Blog() {
           <div className="absolute top-[100px] font-sans font-bold text-3xl text-black">
             <h1 className="relative font-bold left-[40px]">Blog</h1>
 
-            <div className="flex flex-col text-[20px] font-light">
-              <h2 className="flex items-center">
-                Home <FaGreaterThan className="mx-2" /> Blog
-              </h2>
-            </div>
+<div className="flex flex-col text-[20px] font-light sm:text-[18px] md:text-[20px] lg:text-[22px]">
+  <h2 className="flex items-center">
+    Home <FaGreaterThan className="mx-2" /> Blog
+  </h2>
+</div>
+
           </div>
         </div>
 

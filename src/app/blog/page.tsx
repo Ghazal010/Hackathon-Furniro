@@ -15,27 +15,33 @@ export default function Blog() {
     <>
       <Header />
 
-      <div>
-        
-        <div className="relative top-[100px] left-[690px]">
-          <img src="/logo.png" className="w-16 h-16" />
-        </div>
-        
-        
-        <div className="relative flex items-center justify-center">
-          <img src="/shop 1.png" alt="Shop Banner" className="relative" />
+<div>
+ 
+  <div className="relative top-24 left-0 sm:left-1/2 md:left-[690px] sm:left-1/4 transform sm:-translate-x-1/2">
+    <img src="/logo.png" className="w-16 h-16 mx-auto" />
+  </div>
+  
+  
+  <div className="relative flex items-center justify-center">
+    <img
+      src="/shop 1.png"
+      alt="Shop Banner"
+      className="w-full h-auto object-cover"
+    />
 
-          <div className="absolute top-[100px] font-sans font-bold text-3xl text-black">
-            <h1 className="relative font-bold left-[40px]">Blog</h1>
+    
+    <div className="absolute top-[80px] sm:top-[60px] md:top-[100px] text-center font-sans font-bold text-3xl text-black w-full">
+      <h1 className="relative text-xl sm:text-2xl md:text-3xl left-0">Blog</h1>
 
-<div className="flex flex-col text-[20px] font-light sm:text-[18px] md:text-[20px] lg:text-[22px]">
-  <h2 className="flex items-center">
-    Home <FaGreaterThan className="mx-2" /> Blog
-  </h2>
+     
+      <div className="flex flex-col text-[20px] font-light sm:text-[18px] md:text-[20px] lg:text-[22px]">
+        <h2 className="flex items-center justify-center">
+          Home <FaGreaterThan className="mx-2" /> Blog
+        </h2>
+      </div>
+    </div>
+  </div>
 </div>
-
-          </div>
-        </div>
 
        
         <div>

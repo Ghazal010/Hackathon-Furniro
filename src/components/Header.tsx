@@ -20,20 +20,12 @@ const Header = () => {
                 <span className="font-sans font-extrabold text-2xl md:text-3xl ml-4">Furniro</span>
             </div>
 
-           
+            
             <nav className="hidden md:flex gap-x-6 lg:gap-x-12 font-medium text-gray-700">
-                <Link href="/" passHref>
-                    Home
-                </Link>
-                <Link href="./shop" passHref>
-                    Shop
-                </Link>
-                <Link href="./blog" passHref>
-                    Blog
-                </Link>
-                <Link href="./contact" passHref>
-                    Contact
-                </Link>
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/contact">Contact</Link>
             </nav>
 
             
@@ -44,20 +36,12 @@ const Header = () => {
                 <AiOutlineShoppingCart className="cursor-pointer" />
             </div>
 
-           
+            
             <div className="md:hidden flex flex-col items-center space-y-2 absolute top-16 left-0 w-full bg-white shadow-lg p-4">
-                <Link href="/" passHref>
-                    Home
-                </Link>
-                <Link href="./shop" passHref>
-                    Shop
-                </Link>
-                <Link href="./blog" passHref>
-                    Blog
-                </Link>
-                <Link href="./contact" passHref>
-                    Contact
-                </Link>
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/contact">Contact</Link>
             </div>
         </div>
     );

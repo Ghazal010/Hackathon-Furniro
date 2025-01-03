@@ -81,7 +81,7 @@ const Footer = () => {
 
        
         <div className="border-t mt-10 pt-4 text-center text-gray-600 text-sm">
-          2023 Funiro. All rights reserved.
+          2023 Furniro. All rights reserved.
         </div>
       </footer>
     </div>
